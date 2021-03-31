@@ -21,7 +21,7 @@ th,td.true,td.false,td.other{text-align:center;}
 true 
 false 
 '>
-<p>允许你删除崩溃报告，需要前置权限admin_panel.ftbutilities.crash_reports.view</p>
+<p>删除崩溃报告，需要前置权限admin_panel.ftbutilities.crash_reports.view</p>
 </td></tr>
 <tr>
 <td><code>admin_panel.ftbutilities.crash_reports.view</code></td>
@@ -32,7 +32,7 @@ false
 true 
 false 
 '>
-<p>Allow to view crash reports via Admin Panel</p>
+<p>在管理员面板内查看崩溃报告</p>
 </td></tr>
 <tr>
 <td><code>admin_panel.ftbutilities.edit_world.gamerules</code></td>
@@ -43,7 +43,7 @@ false
 true 
 false 
 '>
-<p>Allow to edit gamerules via Admin Panel</p>
+<p>在管理员面板内更改gamerule</p>
 </td></tr>
 <tr>
 <td><code>block.tap</code></td>
@@ -53,7 +53,7 @@ false
 true 
 false 
 '>
-<p>Node for taping blocks with the tree tap</p>
+<p>使用木龙头点击方块</p>
 </td></tr>
 <tr>
 <td><code>block.wrench</code></td>
@@ -63,7 +63,7 @@ false
 true 
 false 
 '>
-<p>Node for wrenching blocks</p>
+<p>使用扳手点击方块</p>
 </td></tr>
 <tr>
 <td><code>command</code></td>
@@ -83,7 +83,7 @@ false
 <td title='
 0s to &infin; 
 '>
-<p>AFK Timer</p>
+<p>AFK计时器，若启用，则在到时后踢出玩家</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.back.cooldown</code></td>
@@ -91,9 +91,10 @@ false
 <td class='other'><code>3m</code></td>
 <td class='other'><code>0s</code></td>
 <td title='
-0s to &infin; 
+0为禁用
+无上限; 
 '>
-<p>/back Cooldown Timer</p>
+<p>使用/back命令的冷却时间</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.back.infinite</code></td>
@@ -103,7 +104,7 @@ false
 true 
 false 
 '>
-<p>Allow to use 'back' command infinite times</p>
+<p>无限次使用/back命令</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.back.warmup</code></td>
@@ -113,7 +114,7 @@ false
 <td title='
 0s to 1m 
 '>
-<p>/back Warmup Timer</p>
+<p>使用/back传送等待时间</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.badge</code></td>
@@ -121,7 +122,7 @@ false
 <td class='other' colspan='2'><code>""</code></td>
 <td title='
 '>
-<p>Badge</p>
+<p>徽章</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chat.name_format</code></td>
@@ -129,8 +130,14 @@ false
 <td class='other'><code>"&lt;{name}&gt;"</code></td>
 <td class='other'><code>"&lt;&amp;2{name}&amp;r&gt;"</code></td>
 <td title='
+&k为乱码
+&l为加粗
+&m为删除线
+&n为下划线
+&o为斜体字
+&r重置字体样式
 '>
-<p>permission.ftbutilities.chat.name_format</p>
+<p>玩家名字前缀，使用&+数字来代表颜色</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chat.nickname.colors</code></td>
@@ -141,7 +148,7 @@ false
 true 
 false 
 '>
-<p>Allow to use formatting codes in nickname, requires ftbutilities.chat.nickname.set</p>
+<p>在nickname中使用颜色样式代码，需要前置权限ftbutilities.chat.nickname.set</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chat.nickname.set</code></td>
@@ -152,7 +159,7 @@ false
 true 
 false 
 '>
-<p>Allow to change nickname</p>
+<p>改变nickname</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chat.speak</code></td>
@@ -162,7 +169,7 @@ false
 true 
 false 
 '>
-<p>Controls if player is muted or not</p>
+<p>控制玩家是否为禁言状态</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chat.text.color</code></td>
@@ -186,7 +193,7 @@ red
 white 
 yellow 
 '>
-<p>Chat Text Color</p>
+<p>玩家聊天信息颜色</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chunkloader.load_offline</code></td>
@@ -196,7 +203,7 @@ yellow
 true 
 false 
 '>
-<p>Keep loaded chunks working when player goes offline</p>
+<p>玩家离线时，被认领并加载的区块仍保存工作</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.chunkloader.max_chunks</code></td>
@@ -206,7 +213,7 @@ false
 <td title='
 0 to 30000 
 '>
-<p>Max Loadable Chunks</p>
+<p>玩家最大可保持加载的区块</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.claims.attack_animals</code></td>
@@ -217,7 +224,7 @@ false
 true 
 false 
 '>
-<p>Allow to attack animals in claimed chunks</p>
+<p>允许玩家攻击被其他玩家认领区块内的动物</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.claims.block.edit</code></td>
@@ -228,7 +235,7 @@ false
 true 
 false 
 '>
-<p>Permission for blocks that players can break and place within claimed chunks</p>
+<p>允许玩家在其他玩家认领的区块内建造/破坏方块</p>
 </td></tr>
 <tr>
 <td><code>ftbutilities.claims.block.edit.openblocks.grave</code></td>
